@@ -4,17 +4,28 @@
   <title>Vigenere</title>
   <meta charset="utf-8">
   <script src="script.js"></script>
+  <link rel="stylesheet" href="css/skeleton.css">
 </head>
 <body>
-  <label>Mensaje</label>
-  <input type="text" id="mensaje"/>
-  <br />
-  <label>Clave</label>
-  <input type="text" id="clave"/>
-  <br />
-  <input type="button" value="Click" onclick="cifradoVigenere('mensaje', 'clave')"/>
-  <br />
-  <label>Resultado</label>
-  <p id="resultado"></p>
+  <div class="container">
+    <div class="row">
+      <h2>Cifrado Vigenere</h2>
+    </div>
+    <div class="row">
+      <label>Mensaje</label>
+      <input type="text" id="mensaje"/>
+    </div>
+    <div class="row">
+      <label>Clave</label>
+      <input type="text" id="clave"/>
+    </div>
+    <div class="row">
+      <input type="button" class="button-primary" value="Click" onclick="cifradoVigenere('mensaje', 'clave')"/>
+    </div>
+    <div class="row">
+      <label>Resultado</label>
+      <p id="resultado"></p>
+    </div>
+  </div>
 </body>
 </html>
