@@ -1,6 +1,7 @@
 //Parametros del cifrado
 var ELEMENTOS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-                 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+                 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+                  "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var LONGITUD = ELEMENTOS.length;
 
 function cifradoVigenere(idMensaje, idClave){
@@ -10,8 +11,6 @@ function cifradoVigenere(idMensaje, idClave){
   var mensajeCifrado = [];
   var mat = [];
   var letra1, letra2;
-  mensaje = mensaje.toLowerCase();
-  clave = clave.toLowerCase();
 
   //Generacion de la matris
   for (var i = 0; i < LONGITUD; i++) {
