@@ -3,7 +3,9 @@ var ELEMENTOS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
                  "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var LONGITUD = ELEMENTOS.length;
 
-function cifradoVigenere(mensaje, clave){
+function cifradoVigenere(idMensaje, idClave){
+  var mensaje = document.getElementById(idMensaje).value;
+  var clave = document.getElementById(idClave).value;
   //Inicializacion de variables
   var mensajeCifrado = [];
   var mat = [];
@@ -45,10 +47,9 @@ function cifradoVigenere(mensaje, clave){
     }
   }
   mensajeCifrado = mensajeCifrado.join("");
+  document.getElementById("resultado").innerHTML = mensajeCifrado;
   return mensajeCifrado;
 }
-var mns = cifradoVigenere("hola, soy Leandro Cabranes y tengo hambre", "verde");
-console.log(mns);
 
 function cifradoCesar(mensaje, paso) {
   //Inicializacion de variables
